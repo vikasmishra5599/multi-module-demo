@@ -1,4 +1,11 @@
 # multi-module-demo
 
 
-Spring multimodule project
+Spring maven multi module project 
+
+
+#### For building (from inside parent folder)
+mvn clean install 
+
+#### For running (from inside parent folder)
+mvn -pl starter -am spring-boot:run
