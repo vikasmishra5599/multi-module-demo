@@ -20,6 +20,6 @@ public class RestAPIController {
     @GetMapping("/hello")
     public String getHello() {
 
-        return "Hello";
+        return demo.runDemo();
     }
 }
