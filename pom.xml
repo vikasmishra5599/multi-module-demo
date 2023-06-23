@@ -18,14 +18,26 @@
     <modules>
         <module>core</module>
         <module>webapp</module>
-        <module>services</module>
+        <module>backend</module>
         <module>starter</module>
     </modules>
 
     <properties>
         <java.version>11</java.version>
     </properties>
-    <build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.28</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+  <!--  <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -35,5 +47,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>
