@@ -6,7 +6,14 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DbService {
 
+    private DbConfig dbConfig;
+
+    @Autowired
+    public DbService(DbConfig dbConfig) {
+        this.dbConfig = dbConfig;
+    }
+
     public String getDemo() {
-        return "Db call ends here ";
+        return  dbConfig.getMsg();
     }
 }

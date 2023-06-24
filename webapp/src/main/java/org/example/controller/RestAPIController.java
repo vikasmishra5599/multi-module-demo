@@ -24,6 +24,6 @@ public class RestAPIController {
     @GetMapping("/hello")
     public String getHello() {
 
-        return demo.runDemo()+ appConfig.getMsg();
+        return appConfig.getMsg()+ " "+demo.runDemo();
     }
 }
